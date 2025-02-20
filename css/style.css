@@ -1,0 +1,132 @@
+.font-primary {
+	font-family: "Inter", serif;
+}
+
+.font-secondary {
+	font-family: "Cookie", serif;
+}
+
+/* Background Section */
+/* Background Section dengan Blur */
+#fasilitas {
+	position: relative;
+	padding: 5rem 0;
+	overflow: hidden;
+}
+
+#fasilitas::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("https://images.unsplash.com/photo-1509785307050-d4066910ec1e?q=80&w=2965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+		center/cover no-repeat;
+	filter: blur(1px); /* Efek blur */
+	z-index: -1;
+	scale: 1.2;
+}
+
+/* Desain Kartu */
+.facility-card {
+	background: #fff;
+	border-radius: 15px;
+	padding: 30px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+	transition: transform 0.2s ease-in-out;
+}
+
+/* Style Gambar */
+.facility-img {
+	width: 200px; /* Perbesar gambar */
+}
+
+/* Teks */
+.facility-card p {
+	color: #333;
+	font-size: 1.1rem;
+}
+
+/* Heading */
+#fasilitas h2 {
+	color: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+/* Styling Feature Card */
+.feature-card {
+	background: #fff;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	text-align: center;
+}
+
+.feature-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Box */
+.icon-box {
+	width: 70px;
+	height: 70px;
+	background: #007bff;
+	color: white;
+	font-size: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+/* Responsive Font */
+@media (max-width: 768px) {
+	.feature-card {
+		padding: 25px;
+	}
+	.icon-box {
+		width: 60px;
+		height: 60px;
+		font-size: 24px;
+	}
+}
+
+.hover-zoom {
+	transition: transform 0.3s ease-in-out;
+}
+
+.hover-zoom:hover {
+	transform: scale(1.05);
+}
+
+/* Efek Hover & Focus pada Input */
+.form-control:focus {
+	border-color: #0d6efd;
+	box-shadow: 0 0 10px rgba(13, 110, 253, 0.25);
+}
+
+/* Animasi Hover pada Tombol */
+.btn-primary {
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+	background-color: #0b5ed7;
+	transform: scale(1.03);
+}
+
+footer a {
+	transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+footer a:hover {
+	color: #0d6efd;
+	transform: scale(1.2);
+}
